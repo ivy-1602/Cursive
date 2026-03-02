@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Top Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/cream"
+                    android:contentDescription="Back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="About"
+                    android:textSize="24sp"
+                    android:textColor="@color/cream"
+                    android:fontFamily="cursive"
+                    android:textStyle="italic"
+                    android:letterSpacing="-0.05" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Paper/Page Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <!-- Decorative Top Border -->
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="2dp"
+                        android:background="@color/primary"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp" />
+
+                    <!-- Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Developer's/Author's Note"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Decorative Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp" />
+
+                    <!-- Paragraph 1 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="We live on autopilot more often than we realize. Life rarely slows down on its own."
+                        android:fontFamily="serif"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="14dp" />
+
+                    <!-- Paragraph 2 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Between responsibilities, screens, and expectations, we move through days without really checking in with ourselves. We're responding, to people, to expectations, to the world, without ever pausing to respond to ourselves."
+                        android:fontFamily="serif"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Paragraph 3 - Emphasized -->
+                    <TextView
+                        android:id="@+id/tv_paragraph_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cursive was created for that pause."
+                        android:fontFamily="serif"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/primary"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Paragraph 4 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A set of questions for yourself. A few honest answers. A moment of stillness in the middle of motion. This isn't about writing beautifully or having something important to say."
+                        android:fontFamily="serif"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="14dp" />
+
+                    <!-- Paragraph 5 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="When we reflect consistently, we begin to see our days more clearly, not as a blur, but as incidents that shaped us. I think for me, this consideration, practiced daily, becomes understanding. And understanding becomes growth."
+                        android:fontFamily="serif"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="14dp" />
+
+                    <!-- Paragraph 6 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A simple interface with no complexity to log-in everyday and reflect. Your reflections are meant for you, and privacy is a promise, not a feature."
+                        android:fontFamily="serif"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Paragraph 7 - Final -->
+                    <TextView
+                        android:id="@+id/tv_paragraph_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="In a world that constantly asks for your attention, Cursive is a space that gives it back to you."
+                        android:fontFamily="serif"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/primary"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="24dp" />
+
+                    <!-- Decorative Divider before signature -->
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:background="@color/divider"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Signature -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-USS"
+                        android:fontFamily="cursive"
+                        android:textStyle="italic"
+                        android:textSize="16sp"
+                        android:letterSpacing="-0.05"
+                        android:textColor="@color/text_secondary"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="32dp" />
+
+                    <!-- Decorative Divider before flowers -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider"
+                        android:layout_marginBottom="24dp" />
+
+                    <!-- 7 Flower Icons Row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_flower"
+                            app:tint="@color/primary_light"
+                            android:contentDescription="Flower" />
+
+                        <Space
+                            android:layout_width="16dp"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_flower"
+                            app:tint="@color/primary_light"
+                            android:contentDescription="Flower" />
+
+                        <Space
+                            android:layout_width="16dp"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_flower"
+                            app:tint="@color/primary_light"
+                            android:contentDescription="Flower" />
+
+                        <Space
+                            android:layout_width="16dp"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_flower"
+                            app:tint="@color/primary_light"
+                            android:contentDescription="Flower" />
+
+                        <Space
+                            android:layout_width="16dp"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_flower"
+                            app:tint="@color/primary_light"
+                            android:contentDescription="Flower" />
+
+                        <Space
+                            android:layout_width="16dp"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_flower"
+                            app:tint="@color/primary_light"
+                            android:contentDescription="Flower" />
+
+                        <Space
+                            android:layout_width="16dp"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_flower"
+                            app:tint="@color/primary_light"
+                            android:contentDescription="Flower" />
+
+                    </LinearLayout>
+
+                    <!-- Decorative Bottom Border -->
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="2dp"
+                        android:background="@color/primary"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Version Info (outside the card/page) -->
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0"
+                android:fontFamily="serif"
+                android:textStyle="italic"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

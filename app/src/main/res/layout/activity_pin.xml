@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/background"
+    android:paddingBottom="80dp">
+
+    <!-- Spacer to push content up -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cursive"
+        android:textSize="48sp"
+        android:textColor="@color/primary"
+        android:fontFamily="cursive"
+        android:textStyle="italic"
+        android:letterSpacing="-0.05"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvPinMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your 4-digit PIN"
+        android:textSize="18sp"
+        android:textColor="@color/text_primary"
+        android:fontFamily="serif"
+        android:layout_marginBottom="24dp" />
+
+    <!-- PIN Input -->
+    <EditText
+        android:id="@+id/etPin"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:background="@color/card_background"
+        android:textColor="@color/text_primary"
+        android:fontFamily="serif"
+        android:letterSpacing="0.5"
+        android:hint="••••"
+        android:layout_marginBottom="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Unlock"
+        android:textSize="16sp"
+        android:textColor="@color/cream"
+        app:backgroundTint="@color/primary"
+        app:cornerRadius="8dp" />
+
+    <!-- Forgot PIN -->
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot PIN?"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:fontFamily="serif"
+        android:layout_marginTop="12dp" />
+
+    <!-- Spacer to push content up -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+</LinearLayout>

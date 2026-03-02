@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main theme colors - Vintage/Parchment aesthetic -->
+    <color name="primary">#6B5244</color> <!-- Deep brown -->
+    <color name="primary_light">#8B7355</color> <!-- Lighter brown -->
+    <color name="cream">#E8DCC4</color> <!-- Parchment cream -->
+    <color name="background">#F5EFE6</color> <!-- Light cream background -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#2C2416</color> <!-- Soft black/dark brown -->
+    <color name="text_primary">#3D2E1F</color> <!-- Dark brown text -->
+    <color name="text_secondary">#6B5244</color> <!-- Medium brown text -->
+
+    <!-- Accent colors - Pastel mood colors -->
+    <color name="mood_happy">#C8DDB5</color> <!-- Pastel sage green -->
+    <color name="mood_calm">#B8D4E8</color> <!-- Pastel blue -->
+    <color name="mood_neutral">#D4C5B9</color> <!-- Pastel taupe -->
+    <color name="mood_sad">#C4B7D6</color> <!-- Pastel lavender -->
+    <color name="mood_anxious">#F4D4B8</color> <!-- Pastel peach -->
+
+    <!-- UI elements -->
+    <color name="card_background">#FBF7F0</color> <!-- Very light cream for cards -->
+    <color name="divider">#D4C5B0</color> <!-- Subtle divider -->
+</resources>

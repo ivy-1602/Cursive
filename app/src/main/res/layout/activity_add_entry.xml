@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Top Bar with Back Button and Date -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_back"
+                app:tint="@color/primary"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:id="@+id/tvEntryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Today's Entry"
+                android:textSize="20sp"
+                android:textColor="@color/primary"
+                android:fontFamily="serif"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- Mood Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How are you feeling?"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Mood Buttons -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMoodHappy"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😊 Happy"
+                    android:textSize="16sp"
+                    app:strokeColor="@color/mood_happy"
+                    android:layout_marginEnd="8dp"
+                    android:paddingHorizontal="20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMoodCalm"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😌 Calm"
+                    android:textSize="16sp"
+                    app:strokeColor="@color/mood_calm"
+                    android:layout_marginEnd="8dp"
+                    android:paddingHorizontal="20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMoodNeutral"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😐 Neutral"
+                    android:textSize="16sp"
+                    app:strokeColor="@color/mood_neutral"
+                    android:layout_marginEnd="8dp"
+                    android:paddingHorizontal="20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMoodSad"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😔 Sad"
+                    android:textSize="16sp"
+                    app:strokeColor="@color/mood_sad"
+                    android:layout_marginEnd="8dp"
+                    android:paddingHorizontal="20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMoodAnxious"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😟 Anxious"
+                    android:textSize="16sp"
+                    app:strokeColor="@color/mood_anxious"
+                    android:paddingHorizontal="20dp" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Title of the Day -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title of the Day"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Give today a title..."
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@color/card_background"
+            app:boxStrokeColor="@color/primary"
+            android:layout_marginBottom="24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTitleOfTheDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:fontFamily="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- What do I want to write? -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What do you want to write?"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write freely..."
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@color/card_background"
+            app:boxStrokeColor="@color/primary"
+            android:layout_marginBottom="24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etWhatToWrite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="4"
+                android:gravity="top"
+                android:textColor="@color/text_primary"
+                android:fontFamily="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- I'm grateful for... -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm grateful for..."
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What am I grateful for today?"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@color/card_background"
+            app:boxStrokeColor="@color/primary"
+            android:layout_marginBottom="24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etGratitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:gravity="top"
+                android:textColor="@color/text_primary"
+                android:fontFamily="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Daily Reflections -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Reflections"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Question 1 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What made me smile today?"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@color/card_background"
+            app:boxStrokeColor="@color/primary"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMadeYouSmile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:gravity="top"
+                android:textColor="@color/text_primary"
+                android:fontFamily="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Question 2 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What challenged me today?"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@color/card_background"
+            app:boxStrokeColor="@color/primary"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etChallenged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:gravity="top"
+                android:textColor="@color/text_primary"
+                android:fontFamily="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Question 3 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What am I quietly hoping for?"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@color/card_background"
+            app:boxStrokeColor="@color/primary"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etQuietlyHopingFor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:gravity="top"
+                android:textColor="@color/text_primary"
+                android:fontFamily="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Question 4 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Who/What impacted my day?"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@color/card_background"
+            app:boxStrokeColor="@color/primary"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etImpactedYou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:gravity="top"
+                android:textColor="@color/text_primary"
+                android:fontFamily="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Question 5 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What am I looking forward to tomorrow?"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@color/card_background"
+            app:boxStrokeColor="@color/primary"
+            android:layout_marginBottom="24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLookingForward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:gravity="top"
+                android:textColor="@color/text_primary"
+                android:fontFamily="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Photo Section (Optional) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a photo (optional)"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:fontFamily="serif"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddPhoto"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Photo"
+            android:textColor="@color/primary"
+            app:strokeColor="@color/primary"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Entry photo" />
+
+        <!-- Save Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveEntry"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Save Entry"
+            android:textSize="16sp"
+            android:textColor="@color/cream"
+            app:backgroundTint="@color/primary"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

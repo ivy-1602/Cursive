@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="start|center_vertical">
+
+    <!-- Initial Circle -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/profile_circle_gradient" />
+
+        <TextView
+            android:id="@+id/tvUserInitial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="T"
+            android:textSize="40sp"
+            android:textColor="@color/cream"
+            android:fontFamily="cursive"
+            android:textStyle="italic"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+    <!-- Name (Left-aligned) -->
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taylor"
+        android:textSize="22sp"
+        android:textColor="@color/cream"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Email (Left-aligned) -->
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="umasalunke7@gmail.com"
+        android:textSize="13sp"
+        android:textColor="@color/cream"
+        android:fontFamily="serif"
+        android:alpha="0.85" />
+
+</LinearLayout>
