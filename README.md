@@ -1,4 +1,4 @@
-# Cursive ✍🏻
+# 𝑪𝒖𝒓𝒔𝒊𝒗𝒆 ✍🏻
 *Your Daily Reflections*
 
 A privacy-first journaling app built with Kotlin and Firebase. Designed for daily reflection, mood tracking, and building sustainable writing habits through intelligent streak systems.
@@ -11,19 +11,15 @@ A privacy-first journaling app built with Kotlin and Firebase. Designed for dail
 
 ## 📸 App Preview
 
-<!-- Screenshots will go here -->
-<!-- 
-<p align="center">
-  <img src="screenshots/home.png" width="200"/>
-  <img src="screenshots/add_entry.png" width="200"/>
-  <img src="screenshots/calendar.png" width="200"/>
-  <img src="screenshots/analytics.png" width="200"/>
-</p>
--->
-
+![Login & Register](https://i.imgur.com/auth_screens.png)
+![Home & Add Entry](https://i.imgur.com/home_entry.png)
+![Calendar & View Entry](https://i.imgur.com/calendar_view.png)
+![All Entries & Search](https://i.imgur.com/all_entries.png)
+![Analytics & Profile](https://i.imgur.com/analytics_profile.png)
+![Settings & About](https://i.imgur.com/settings_about.png)
 ---
 
-## Overview
+## 📜 Overview
 
 Cursive is a reflection and gratitude journaling application that combines thoughtful design with robust functionality. It addresses the common challenge of maintaining consistent journaling habits while respecting user privacy.
 
@@ -35,9 +31,9 @@ Cursive is a reflection and gratitude journaling application that combines thoug
 
 ---
 
-## Core Features
+##📜 Core Features
 
-### Journaling System
+### 📜 Journaling System
 Each entry includes:
 - **Mood Selection** (Happy, Calm, Neutral, Sad, Anxious)
 - **Title of the Day**
@@ -84,7 +80,7 @@ Each entry includes:
 - **UI Framework:** XML Layouts with Material Design Components
 - **Binding:** View Binding enabled
 
-### Tech Stack
+### ⚙️ Tech Stack
 
 **Frontend:**
 - Material Design Components 1.11.0
@@ -122,7 +118,7 @@ com.uss.cursive/
 
 ---
 
-## Design System
+## 🎨 Design System
 
 **Color Palette:**
 - Primary: Deep brown (#6B5244)
@@ -140,7 +136,7 @@ Vintage journal aesthetic meets modern Android UX. Designed to feel calm and int
 
 ---
 
-## Build Timeline
+## 🕰️ Build Timeline
 
 | Day | Focus Area | Deliverables |
 |-----|------------|--------------|
@@ -153,7 +149,7 @@ Vintage journal aesthetic meets modern Android UX. Designed to feel calm and int
 
 ---
 
-## Screens Overview
+## 📱 Screens Overview
 
 **13 Total Screens:**
 
@@ -218,7 +214,7 @@ Dark mode and alternative color schemes
 
 ---
 
-## Privacy & Security
+## 🔏 Privacy & Security
 
 - All journal entries are **completely private** and isolated per user
 - Firebase Authentication ensures secure account access
@@ -288,7 +284,7 @@ firestore.collection("entries")
 
 ---
 
-## License
+## 📄License
 
 Copyright © 2026 Uma Salunke. All rights reserved.
 
@@ -296,7 +292,7 @@ This project is available for portfolio review and educational reference. Commer
 
 ---
 
-## Contact
+## 📫Contact
 
 **Uma Salunke**  
 AI & ML Engineering Student
@@ -321,4 +317,4 @@ This app exists in that space between technical precision and human experience.
 
 **Made with 🫀 & 🧠**
 
-*"Your thoughts deserve a space that feels like home."*
+*That's the reason I build 𝑪𝒖𝒓𝒔𝒊𝒗𝒆, because analytical minds need emotional check-ins just as much as anyone else.*
