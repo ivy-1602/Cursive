@@ -31,9 +31,9 @@ Cursive is a reflection and gratitude journaling application that combines thoug
 
 ---
 
-##📜 Core Features
+## 📜 Core Features
 
-### 📜 Journaling System
+### Journaling System
 Each entry includes:
 - **Mood Selection** (Happy, Calm, Neutral, Sad, Anxious)
 - **Title of the Day**
