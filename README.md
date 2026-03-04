@@ -1,4 +1,4 @@
-# 𝑪𝒖𝒓𝒔𝒊𝒗𝒆 ✍🏻
+# 𝑪𝒖𝒓𝒔𝒊𝒗𝒆 ✍ *Your Daily Reflections*
 *Your Daily Reflections*
 
 A privacy-first journaling app built with Kotlin and Firebase. Designed for daily reflection, mood tracking, and building sustainable writing habits through intelligent streak systems.
