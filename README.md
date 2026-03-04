@@ -19,7 +19,7 @@ A privacy-first journaling app built with Kotlin and Firebase. Designed for dail
 ![Settings & About](https://i.imgur.com/settings_about.png)
 ---
 
-## 📜 Overview is here
+## 📜 Overview
 
 Cursive is a reflection and gratitude journaling application that combines thoughtful design with robust functionality. It addresses the common challenge of maintaining consistent journaling habits while respecting user privacy.
 
