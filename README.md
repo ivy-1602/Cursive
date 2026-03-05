@@ -11,12 +11,12 @@ A privacy-first journaling app built with Kotlin and Firebase. Designed for dail
 
 ## 📸 App Preview
 
-![Login & Register](https://i.imgur.com/auth_screens.png)
-![Home & Add Entry](https://i.imgur.com/home_entry.png)
-![Calendar & View Entry](https://i.imgur.com/calendar_view.png)
-![All Entries & Search](https://i.imgur.com/all_entries.png)
-![Analytics & Profile](https://i.imgur.com/analytics_profile.png)
-![Settings & About](https://i.imgur.com/settings_about.png)
+![Login/ Register](https://i.imgur.com/G8KeOtn.jpeg)
+![Splash Screen  & LockScreen](https://i.imgur.com/cOO4ZHk.jpeg)
+![Home Screen & Edit/View Entry](https://i.imgur.com/PwfFhYK.jpeg)
+![Navigation & Analytics](https://i.imgur.com/all_entries.png)
+![Profile & All Entries ](https://i.imgur.com/analytics_profile.png)
+![Calender & Settings](https://i.imgur.com/hyzfoSB.jpeg)
 ---
 
 ## 📜 Overview
