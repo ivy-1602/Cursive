@@ -17,7 +17,7 @@ A privacy-first journaling app built with Kotlin and Firebase. Designed for dail
 ### 💫 Splash Screen & Lock Screen
 ![Splash Screen & Lock Screen](https://i.imgur.com/cOO4ZHk.jpeg)
 
-### 🏠 Home Screen & Edit/View Entryy
+### 🏠 Home Screen & Edit/View Entry
 ![Home Screen & Edit/View Entry](https://i.imgur.com/PwfFhYK.jpeg)
 
 ### 🧭 Navigation & Analytics
